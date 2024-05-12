@@ -10,7 +10,8 @@
 
 #ifndef PYPARAM_H_
 #define PYPARAM_H_
-
+#include <stdexcept>
+#include <sstream>
 #include <utility>
 using namespace std;
 namespace Refactor {

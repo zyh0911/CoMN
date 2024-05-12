@@ -12,7 +12,8 @@
 #define PYINPUT_H_
 
 #include <vector>
-
+#include <stdexcept>
+#include <sstream>
 using namespace std;
 
 namespace Refactor {

@@ -1,2 +1,2 @@
-shape: 256,128,3,3
-weight_sparsity: 5.07351342093898e-06
+shape: 10,512
+weight_sparsity: 0.00010106989793712273

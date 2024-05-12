@@ -19,7 +19,7 @@
 #include "PyParam.h"
 #include "PyWeight.h"
 #include "json.hpp"
-
+#include <sstream>
 using json = nlohmann::json;
 
 using namespace std;

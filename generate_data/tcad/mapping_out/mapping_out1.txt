@@ -1,0 +1,53 @@
+#############################################################################################################
+
+#######################    mapping CNN models to nvCIM chip and evaluating energy, latency and area    #######################
+
+#############################################################################################################
+
+layer: 1; type: conv3*3; tiles: 0-0; energy (mJ): 0.00069823893; latency (ms): 21.725217; area (mm2): 0.422997
+layer: 2; type: conv3*3; tiles: 1-1; energy (mJ): 0.00059558793; latency (ms): 5.443337; area (mm2): 0.422997
+layer: 3; type: conv3*3; tiles: 2-3; energy (mJ): 0.0004335119; latency (ms): 1.3604486; area (mm2): 0.845994
+layer: 4; type: conv3*3; tiles: 4-5; energy (mJ): 0.0005735394; latency (ms): 1.3611896; area (mm2): 0.845994
+layer: 5; type: conv3*3; tiles: 6-8; energy (mJ): 0.00025175924; latency (ms): 0.3402974; area (mm2): 1.268991
+layer: 6; type: conv3*3; tiles: 9-14; energy (mJ): 0.00056684044; latency (ms): 0.3402974; area (mm2): 2.537982
+layer: 7; type: conv3*3; tiles: 15-20; energy (mJ): 0.00014171011; latency (ms): 0.085074351; area (mm2): 2.537982
+layer: 8; type: conv3*3; tiles: 21-26; energy (mJ): 0.00014171011; latency (ms): 0.085074351; area (mm2): 2.537982
+layer: 9; type: fc; tiles: 27-27; energy (mJ): 2.3983883e-06; latency (ms): 0.02123774; area (mm2): 0.422997
+layer: 10; type: fc; tiles: 28-28; energy (mJ): 2.3983904e-06; latency (ms): 0.02123774; area (mm2): 0.422997
+layer: 11; type: fc; tiles: 29-29; energy (mJ): 9.7266774e-07; latency (ms): 0.021215747; area (mm2): 0.422997
+total energy (mJ): 0.0038224585 total latency (ms): 21.727339 total area (mm2): 13.28042
+
+##########################  mapping relationship between virtual tiles and physical tiles ##########################
+
+Total Rows: 5
+Total Columns: 6
+tile: 0 location: [3, 1]
+tile: 1 location: [2, 1]
+tile: 2 location: [1, 0]
+tile: 3 location: [2, 0]
+tile: 4 location: [0, 1]
+tile: 5 location: [0, 0]
+tile: 6 location: [1, 2]
+tile: 7 location: [0, 2]
+tile: 8 location: [1, 1]
+tile: 9 location: [2, 3]
+tile: 10 location: [1, 3]
+tile: 11 location: [2, 2]
+tile: 12 location: [2, 4]
+tile: 13 location: [3, 3]
+tile: 14 location: [0, 3]
+tile: 15 location: [1, 4]
+tile: 16 location: [0, 4]
+tile: 17 location: [1, 5]
+tile: 18 location: [0, 5]
+tile: 19 location: [2, 5]
+tile: 20 location: [3, 4]
+tile: 21 location: [3, 5]
+tile: 22 location: [4, 5]
+tile: 23 location: [4, 4]
+tile: 24 location: [3, 2]
+tile: 25 location: [4, 3]
+tile: 26 location: [4, 2]
+tile: 27 location: [4, 1]
+tile: 28 location: [4, 0]
+tile: 29 location: [3, 0]

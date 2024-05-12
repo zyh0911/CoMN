@@ -10,7 +10,8 @@
 
 #ifndef PERF_EVALUATOR_H_
 #define PERF_EVALUATOR_H_
-
+#include <stdexcept>
+#include <sstream>
 namespace Refactor {
 
 // The interface of Calculating the Performance of all modules required.

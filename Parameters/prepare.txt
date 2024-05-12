@@ -1,3 +1,11 @@
 layer: 1 array_size: 13824 compute_cycle: 1024
 layer: 2 array_size: 589824 compute_cycle: 256
 layer: 3 array_size: 2359296 compute_cycle: 64
+layer: 4 array_size: 4718592 compute_cycle: 64
+layer: 5 array_size: 9437184 compute_cycle: 16
+layer: 6 array_size: 18874368 compute_cycle: 16
+layer: 7 array_size: 18874368 compute_cycle: 4
+layer: 8 array_size: 18874368 compute_cycle: 4
+layer: 9 array_size: 2097152 compute_cycle: 1
+layer: 10 array_size: 2097152 compute_cycle: 1
+layer: 11 array_size: 40960 compute_cycle: 1

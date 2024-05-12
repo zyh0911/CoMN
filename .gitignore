@@ -5,3 +5,6 @@ src/refactor/build
 datasets/cifar-10-batches-py
 datasets/MNIST
 Weight/tcad
+*.o
+cacti-master/
+datasets/

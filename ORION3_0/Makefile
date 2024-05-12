@@ -1,4 +1,4 @@
-#CC     = /usr/bin/gcc-3.4
+#GCC     = /usr/bin/gcc-3.4
 
 #CFLAGS = -I. $(DEFS) -O3 -Wno-deprecated
 CFLAGS = -I. $(DEFS) -g -DTECHNEW
@@ -33,16 +33,16 @@ ALL_SRCS    = $(SRCS) $(TEST_SRCS) $(MODULE_SRCS)
 ALL_OBJS    = $(ALL_SRCS:.c=.o)
 
 orion_router: orion_router.o router_power.o router_area.o SIM_router_power.o $(OBJS)
-	@$(CC) $(CFLAGS) -no-pie -o $@ $^ -lm 
+	@$(GCC) $(CFLAGS) -no-pie -o $@ $^ -lm 
 
 test_permu: test_permu.o $(OBJS)
-	@$(CC) $(CFLAGS) -no-pie -o $@ $^ -lm 
+	@$(GCC) $(CFLAGS) -no-pie -o $@ $^ -lm 
 
 test_alu: test_alu.o $(OBJS)
-	@$(CC) $(CFLAGS) -o $@ $^ -lm
+	@$(GCC) $(CFLAGS) -o $@ $^ -lm
 
 dump_para: dump_para.o $(OBJS)
-	@$(CC) $(CFLAGS) -o $@ $^ -lm
+	@$(GCC) $(CFLAGS) -o $@ $^ -lm
 
 clean:
 	@$(RM) $(ALL_OBJS) $(TEST_EXEC) *~ *.bak core

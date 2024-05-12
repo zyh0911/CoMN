@@ -13,15 +13,21 @@
 
 #include <map>
 #include <vector>
-
+#include <stdexcept>
+#include <sstream>
 #include "defines.h"
 using namespace std;
 
 namespace Refactor {
 
 struct MeshInfo {
-  double link_length = 0;
-  double Mesh_latency = 0;
+  double link_length;
+  double Mesh_latency;
+
+  // Constructor that takes 'link_length' and 'Mesh_latency' as arguments
+  MeshInfo(double link_length, double Mesh_latency)
+      : link_length(link_length), Mesh_latency(Mesh_latency) {}
+  MeshInfo() {}
 };
 
 struct TileLocation {
